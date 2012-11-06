@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class MainView;
+#import "MainView.h"
 
 @interface MainViewController : UIViewController {
     IBOutlet MainView* mainView;
@@ -18,9 +17,7 @@
 - (void) setImage:(UIImage*)image;
 - (void) setOpacity:(UISlider*)opacity;
 - (void) setSize:(UISlider*)size;
-- (void) setScatter:(UISwitch*)scatter;
-- (void) setCustomFilter:(double*)values divisor:(double)d offset:(double)o;
-- (void) clearImage;
-- (void) saveToAlbum;
+
+- (void)saveToAlbum;
 
 @end

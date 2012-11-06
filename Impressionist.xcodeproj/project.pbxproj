@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,15 +15,13 @@
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
+		289233A60DB2D0840083E9F9 /* FlipsideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A30DB2D0840083E9F9 /* FlipsideView.m */; };
 		289233A70DB2D0840083E9F9 /* MainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 289233A50DB2D0840083E9F9 /* MainView.mm */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.mm */; };
 		289233AF0DB2D0DB0083E9F9 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 289233AB0DB2D0DB0083E9F9 /* RootViewController.mm */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.mm */; };
-		6F0B42770F9CEE2600692004 /* CustomKernelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F0B42760F9CEE2600692004 /* CustomKernelView.xib */; };
-		6FB319EE0F9D14FA00E1E013 /* CustomKernelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB319ED0F9D14FA00E1E013 /* CustomKernelController.m */; };
 		D101D2980F2C94E00055687D /* Impressionist.png in Resources */ = {isa = PBXBuildFile; fileRef = D101D2970F2C94E00055687D /* Impressionist.png */; };
 		D12EC11E0F2D885A000CCBB9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EC11D0F2D885A000CCBB9 /* libsqlite3.dylib */; };
-		D12EC1200F2D8863000CCBB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EC11F0F2D8863000CCBB9 /* CoreLocation.framework */; };
 		D12EC1240F2D886C000CCBB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EC1230F2D886C000CCBB9 /* SystemConfiguration.framework */; };
 		D1F1887E0F2EE45A00C06B2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F1887D0F2EE45A00C06B2C /* QuartzCore.framework */; };
 		E7651BDE0F8ACED0007F037C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7651BDD0F8ACED0007F037C /* OpenGLES.framework */; };
@@ -39,6 +37,8 @@
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		289233A20DB2D0840083E9F9 /* FlipsideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideView.h; path = Classes/FlipsideView.h; sourceTree = "<group>"; };
+		289233A30DB2D0840083E9F9 /* FlipsideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideView.m; path = Classes/FlipsideView.m; sourceTree = "<group>"; };
 		289233A40DB2D0840083E9F9 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainView.h; path = Classes/MainView.h; sourceTree = "<group>"; };
 		289233A50DB2D0840083E9F9 /* MainView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MainView.mm; path = Classes/MainView.mm; sourceTree = "<group>"; };
 		289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
@@ -49,13 +49,9 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FlipsideViewController.mm; path = Classes/FlipsideViewController.mm; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Impressionist_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Impressionist_Prefix.pch; sourceTree = "<group>"; };
-		6F0B42760F9CEE2600692004 /* CustomKernelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKernelView.xib; sourceTree = "<group>"; };
-		6FB319EC0F9D14FA00E1E013 /* CustomKernelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomKernelController.h; path = Classes/CustomKernelController.h; sourceTree = "<group>"; };
-		6FB319ED0F9D14FA00E1E013 /* CustomKernelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomKernelController.m; path = Classes/CustomKernelController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D101D2970F2C94E00055687D /* Impressionist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Impressionist.png; sourceTree = "<group>"; };
 		D12EC11D0F2D885A000CCBB9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		D12EC11F0F2D8863000CCBB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D12EC1230F2D886C000CCBB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D1F1887D0F2EE45A00C06B2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E7651BDD0F8ACED0007F037C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -70,7 +66,6 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
 				D12EC11E0F2D885A000CCBB9 /* libsqlite3.dylib in Frameworks */,
-				D12EC1200F2D8863000CCBB9 /* CoreLocation.framework in Frameworks */,
 				D12EC1240F2D886C000CCBB9 /* SystemConfiguration.framework in Frameworks */,
 				D1F1887E0F2EE45A00C06B2C /* QuartzCore.framework in Frameworks */,
 				E7651BDE0F8ACED0007F037C /* OpenGLES.framework in Frameworks */,
@@ -103,6 +98,8 @@
 		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
 			isa = PBXGroup;
 			children = (
+				289233A20DB2D0840083E9F9 /* FlipsideView.h */,
+				289233A30DB2D0840083E9F9 /* FlipsideView.m */,
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.mm */,
 			);
@@ -125,12 +122,12 @@
 			children = (
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
-				6FB319EB0F9D14DA00E1E013 /* Custom Kernel View */,
 				080E96DDFE201D6D7F000001 /* Application Controllers */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				D12EC11D0F2D885A000CCBB9 /* libsqlite3.dylib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -152,7 +149,6 @@
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				6F0B42760F9CEE2600692004 /* CustomKernelView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -161,8 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				E7651BDD0F8ACED0007F037C /* OpenGLES.framework */,
-				D12EC11D0F2D885A000CCBB9 /* libsqlite3.dylib */,
-				D12EC11F0F2D8863000CCBB9 /* CoreLocation.framework */,
 				D12EC1230F2D886C000CCBB9 /* SystemConfiguration.framework */,
 				D1F1887D0F2EE45A00C06B2C /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -170,15 +164,6 @@
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6FB319EB0F9D14DA00E1E013 /* Custom Kernel View */ = {
-			isa = PBXGroup;
-			children = (
-				6FB319EC0F9D14FA00E1E013 /* CustomKernelController.h */,
-				6FB319ED0F9D14FA00E1E013 /* CustomKernelController.m */,
-			);
-			name = "Custom Kernel View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +192,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Impressionist" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -234,7 +219,6 @@
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				D101D2980F2C94E00055687D /* Impressionist.png in Resources */,
-				6F0B42770F9CEE2600692004 /* CustomKernelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,11 +231,11 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ImpressionistAppDelegate.m in Sources */,
+				289233A60DB2D0840083E9F9 /* FlipsideView.m in Sources */,
 				289233A70DB2D0840083E9F9 /* MainView.mm in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.mm in Sources */,
 				289233AF0DB2D0DB0083E9F9 /* RootViewController.mm in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.mm in Sources */,
-				6FB319EE0F9D14FA00E1E013 /* CustomKernelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Don't Code Sign";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

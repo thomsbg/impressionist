@@ -7,28 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RootViewController.h"
 
-@class RootViewController;
 @class MainViewController;
 
 @interface FlipsideViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
-	RootViewController* rootViewController;
-	MainViewController* mainController;
+	MainViewController* mainController;	
 	
 	IBOutlet UIPickerView* brushPicker;
 	IBOutlet UISlider* size;
 	IBOutlet UISlider* opacity;
-	IBOutlet UISwitch* scatter;
+	
+	RootViewController* rootViewController;
 }
 
-@property (retain, nonatomic) RootViewController *rootViewController;
 @property (retain, nonatomic) MainViewController *mainController;
+@property (retain, nonatomic) RootViewController *rootViewController;
 
 @property (retain, nonatomic) UISlider* size;
 @property (retain, nonatomic) UISlider* opacity;
-@property (retain, nonatomic) UISwitch* scatter;
 
-- (IBAction)createFilter;
 - (IBAction)selectPicture;
 - (IBAction)saveToAlbum;
 

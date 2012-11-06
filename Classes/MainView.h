@@ -12,11 +12,14 @@
 struct Stroke {
 	unsigned type;
 	CGPoint location;
-	CGPoint prevLocation;
+	CGPoint location2;
+	CGPoint location3;
 	float alpha;
-	float angle;
-	float size;
-	int curvePoints[6];
+	float strokeWidth;
+	float eltWidth;
+	unsigned density;
+	
+	std::vector<CGPoint> curvePoints;
 	
 	Stroke() { }
 	Stroke(unsigned t, CGPoint l, float alpha_) : type(t), location(l), alpha(alpha_) { }
@@ -26,36 +29,26 @@ struct Stroke {
 	std::vector<Stroke> strokes;
 	
 	unsigned char *rawData;
-	unsigned char *x_grad, *y_grad, *blurred, *sharpened, *custom;
+	unsigned char *x_grad, *y_grad;
 	unsigned brush;
 	
 	unsigned imgWidth;
 	unsigned imgHeight;
 	unsigned bytesPerRow;
 	unsigned bytesPerPixel;
-	unsigned clearImage;
-	
-	float prev_angle;
-	double* custom_kernel;
 	
 	UISlider* opacity;
 	UISlider* size;
-	UISwitch* scatter;
-
+	
 	CGImageRef cached;
-	UIImageView image;
 }
 
-//- (void)setCustomKernel:(double*)values;
+
 - (void)setImage:(UIImage*)paintImage;
-- (void)clearImage;
-- (void)setCustomFilter:(double*)kernel divisor:(double)d offset:(double)o;
 - (void)computeGradient;
-- (void)computeFilters;
 
 @property unsigned brush;
 @property (retain, nonatomic) UISlider* opacity;
 @property (retain, nonatomic) UISlider* size;
-@property (retain, nonatomic) UISwitch* scatter;
 
 @end

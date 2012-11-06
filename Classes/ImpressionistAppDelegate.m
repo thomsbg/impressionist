@@ -21,9 +21,8 @@
     [window makeKeyAndVisible];
 }
 
-//- (void)applicationWillTerminate:(UIApplication*)application {
-//	
-//}
+- (void)applicationWillTerminate:(UIApplication*)application {
+}
 
 
 - (void)dealloc {

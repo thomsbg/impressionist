@@ -12,21 +12,18 @@
 @class FlipsideViewController;
 
 @interface RootViewController : UIViewController {
-	MainViewController *mainViewController;
-	FlipsideViewController *flipsideViewController;
-	UIButton *infoButton;
-	UIButton *clearButton;
-	UINavigationBar *flipsideNavigationBar;
+    UIButton *infoButton;
+    MainViewController *mainViewController;
+    FlipsideViewController *flipsideViewController;
+    UINavigationBar *flipsideNavigationBar;
 }
 
-@property (nonatomic, retain) MainViewController *mainViewController;
-@property (nonatomic, retain) FlipsideViewController *flipsideViewController;
 @property (nonatomic, retain) IBOutlet UIButton *infoButton;
-@property (nonatomic, retain) IBOutlet UIButton *clearButton;
+@property (nonatomic, retain) MainViewController *mainViewController;
 @property (nonatomic, retain) UINavigationBar *flipsideNavigationBar;
+@property (nonatomic, retain) FlipsideViewController *flipsideViewController;
 
 - (IBAction)toggleView;
-- (IBAction)clearImage;
 - (void)loadFlipsideViewController;
 - (void)toggleNavBar;
 - (void)saveToAlbum;

@@ -11,6 +11,7 @@
 
 @implementation MainViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
@@ -43,7 +44,6 @@
 
 
 - (void)dealloc {
-	[mainView release];
     [super dealloc];
 }
 
@@ -55,24 +55,12 @@
 	[mainView setImage:image];
 }
 
-- (void)clearImage {
-	[mainView clearImage];
-}
-
 - (void) setOpacity:(UISlider*)opacity {
 	mainView.opacity = opacity;
 }
 
 - (void) setSize:(UISlider*)size {
 	mainView.size = size;
-}
-
-- (void) setScatter:(UISwitch*)scatter {
-	mainView.scatter = scatter;
-}
-
-- (void) setCustomFilter:(double*)values divisor:(double)d offset:(double)o {
-	[mainView setCustomFilter:values divisor:d offset:o];
 }
 
 - (void)saveToAlbum {

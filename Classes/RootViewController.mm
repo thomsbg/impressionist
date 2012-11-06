@@ -10,13 +10,14 @@
 #import "MainViewController.h"
 #import "FlipsideViewController.h"
 
+
 @implementation RootViewController
 
+@synthesize infoButton;
+@synthesize flipsideNavigationBar;
 @synthesize mainViewController;
 @synthesize flipsideViewController;
-@synthesize infoButton;
-@synthesize clearButton;
-@synthesize flipsideNavigationBar;
+
 
 - (void)viewDidLoad {
     
@@ -28,12 +29,10 @@
 	[self loadFlipsideViewController];
 	
     [self.view insertSubview:mainViewController.view belowSubview:infoButton];
-	
 }
 
 
 - (void)loadFlipsideViewController {
-    
     FlipsideViewController *viewController = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
     self.flipsideViewController = viewController;
     [viewController release];
@@ -76,7 +75,6 @@
         [mainViewController viewWillDisappear:YES];
         [mainView removeFromSuperview];
         [infoButton removeFromSuperview];
-		[clearButton removeFromSuperview];
         [self.view addSubview:flipsideView];
         [self.view insertSubview:flipsideNavigationBar aboveSubview:flipsideView];
         [mainViewController viewDidDisappear:YES];
@@ -89,7 +87,6 @@
         [flipsideNavigationBar removeFromSuperview];
         [self.view addSubview:mainView];
         [self.view insertSubview:infoButton aboveSubview:mainViewController.view];
-		[self.view insertSubview:clearButton aboveSubview:mainViewController.view];
         [flipsideViewController viewDidDisappear:YES];
         [mainViewController viewDidAppear:YES];
     }
@@ -111,6 +108,7 @@
 }
 */
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
     // Release anything that's not essential, such as cached data
@@ -119,7 +117,6 @@
 
 - (void)dealloc {
     [infoButton release];
-	[clearButton release];
     [flipsideNavigationBar release];
     [mainViewController release];
     [flipsideViewController release];
@@ -129,9 +126,4 @@
 - (void)saveToAlbum {
 	[self.mainViewController saveToAlbum];
 }
-
-- (IBAction)clearImage {
-	[self.mainViewController clearImage];
-}
-
 @end
